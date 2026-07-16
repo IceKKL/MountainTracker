@@ -11,21 +11,21 @@ Wykonana jako test możliwości cursora pro.
 <table>
   <tr>
     <td align="center">
-      <img src="docs/screenshots/dashboard.png" width="380"><br>
+      <img src="docs/screenshots/dashboard.png" width="380" height="220" style="width:380px;height:220px;object-fit:contain;display:block;"><br>
       <sub><b>Dashboard</b></sub>
     </td>
     <td align="center">
-      <img src="docs/screenshots/trasaMapa.png" width="380"><br>
+      <img src="docs/screenshots/trasaMapa.png" width="380" height="220" style="width:380px;height:220px;object-fit:contain;display:block;"><br>
       <sub><b>Mapa trasy z profilem wysokościowym</b></sub>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="docs/screenshots/kgpTracker.png" width="380"><br>
+      <img src="docs/screenshots/kgpTracker.png" width="380" height="220" style="width:380px;height:220px;object-fit:contain;display:block;"><br>
       <sub><b>Postęp KGP</b></sub>
     </td>
     <td align="center">
-      <img src="docs/screenshots/sprzet.png" width="380"><br>
+      <img src="docs/screenshots/sprzet.png" width="380" height="220" style="width:380px;height:220px;object-fit:contain;display:block;"><br>
       <sub><b>Sprzęt</b></sub>
     </td>
   </tr>
