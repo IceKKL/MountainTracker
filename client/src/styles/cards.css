@@ -1,0 +1,40 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.badge-lato {
+  background: rgba(196, 92, 58, 0.12);
+  color: var(--accent);
+}
+
+.badge-zima {
+  background: rgba(74, 103, 65, 0.12);
+  color: var(--green);
+}
+
+.badge-uniwersalny {
+  background: rgba(138, 132, 124, 0.15);
+  color: var(--stone);
+}
+
+.badge-planowana {
+  background: rgba(74, 103, 65, 0.12);
+  color: var(--green);
+}
+
+.badge-zrealizowana {
+  background: rgba(196, 92, 58, 0.12);
+  color: var(--accent);
+}

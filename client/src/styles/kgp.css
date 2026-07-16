@@ -1,0 +1,168 @@
+.kgp-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.kgp-subtitle {
+  margin-top: -0.5rem;
+}
+
+.kgp-progress-header {
+  padding: 1rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.kgp-progress-label {
+  font-weight: 600;
+}
+
+.kgp-range-section {
+  margin-top: 0.5rem;
+}
+
+.kgp-range-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 0.85rem;
+}
+
+.kgp-peaks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.kgp-crown-peak {
+  display: flex;
+  justify-content: center;
+}
+
+.kgp-crown-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.kgp-crown-icon {
+  display: flex;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+  opacity: 0.85;
+}
+
+.kgp-peak-crown {
+  width: 100%;
+  border: 2px solid rgba(196, 92, 58, 0.35);
+  box-shadow: 0 2px 10px rgba(44, 42, 38, 0.06);
+}
+
+.kgp-peak-crown.kgp-peak-conquered {
+  border-color: #94ad8a;
+  background: #dce8d6;
+  box-shadow:
+    inset 4px 0 0 var(--green),
+    0 4px 16px rgba(74, 103, 65, 0.22);
+}
+
+.kgp-range-label {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.kgp-peak-card {
+  padding: 1rem;
+}
+
+.kgp-peak-card:not(.kgp-peak-conquered) {
+  background: var(--surface);
+}
+
+.kgp-peak-conquered {
+  background: #e4ede0;
+  border-color: #a8bf9e;
+  box-shadow:
+    inset 4px 0 0 var(--green),
+    0 3px 14px rgba(74, 103, 65, 0.2);
+}
+
+.kgp-peak-conquered .kgp-peak-header h3 {
+  color: #3d5237;
+}
+
+.kgp-peak-conquered .kgp-range-label {
+  color: #5a7354;
+}
+
+.kgp-peak-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.kgp-peak-header h3 {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.kgp-conquer-order {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--green);
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+}
+
+.kgp-conquer-order-num {
+  flex-shrink: 0;
+}
+
+.kgp-conquer-date {
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.kgp-elevation {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.kgp-conquered-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--green);
+  color: #f4f0e8;
+  flex-shrink: 0;
+}
+
+.kgp-conquer-info {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.kgp-not-conquered {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+}

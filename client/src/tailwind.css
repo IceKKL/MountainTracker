@@ -1,0 +1,4 @@
+@layer theme, base, components, legacy, utilities;
+@import "tailwindcss";
+@import "./index.css" layer(legacy);
+@config "../tailwind.config.js";

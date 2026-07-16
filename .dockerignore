@@ -1,0 +1,17 @@
+node_modules
+**/node_modules
+client/dist
+server/dist
+shared/dist
+server/data/*.sqlite
+server/data/*.sqlite-*
+server/uploads/**
+.git
+.gitignore
+.cursor
+.vscode
+*.md
+!README.md
+client/node_modules/.vite
+client/node_modules/.vite-temp
+**/.tmp

@@ -1,0 +1,44 @@
+.stats-trivia {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stats-trivia-item {
+  padding: 1rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.stats-trivia-item .label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0 0 0.35rem;
+}
+
+.stats-trivia-item .value {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  color: var(--text);
+  margin: 0;
+}
+
+.gear-usage-stats {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
+.gear-usage-stats p {
+  margin: 0.15rem 0;
+}
+
+@media (max-width: 640px) {
+  .stats-trivia {
+    grid-template-columns: 1fr;
+  }
+}

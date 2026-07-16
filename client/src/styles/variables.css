@@ -1,0 +1,15 @@
+:root {
+  --bg: #f4f0e8;
+  --surface: #faf8f4;
+  --text: #2c2a26;
+  --text-muted: #6b6560;
+  --accent: #c45c3a;
+  --accent-hover: #a84d30;
+  --green: #4a6741;
+  --stone: #8a847c;
+  --border: #ddd8ce;
+  --shadow: 0 2px 8px rgba(44, 42, 38, 0.08);
+  --radius: 10px;
+  --font-heading: 'Fraunces', Georgia, serif;
+  --font-body: 'Source Sans 3', system-ui, sans-serif;
+}

@@ -1,0 +1,295 @@
+.trip-logistics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.25rem;
+}
+
+.trip-logistics-grid--compact {
+  gap: 1rem;
+}
+
+.trip-logistics-nutrition,
+.trip-logistics-comparison {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.trip-logistics-nutrition-title {
+  margin: 0 0 0.85rem;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.trip-logistics-comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.trip-logistics-comparison-table th,
+.trip-logistics-comparison-table td {
+  padding: 0.65rem 0.85rem;
+  text-align: left;
+  border: 1px solid var(--border);
+}
+
+.trip-logistics-comparison-table thead th {
+  background: var(--bg);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.trip-logistics-comparison-table tbody th[scope='row'] {
+  background: var(--bg);
+  font-weight: 500;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.trip-logistics-comparison-table tbody td {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.trip-logistics-comparison-bilans th[scope='row'] {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.trip-logistics-balance {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.trip-logistics-balance--positive {
+  color: var(--green);
+}
+
+.trip-logistics-balance--negative {
+  color: #a84d30;
+}
+
+.trip-logistics-balance--neutral {
+  color: var(--text-muted);
+}
+
+.trip-logistics-comparison-bilans td:has(.trip-logistics-balance--positive) {
+  background: rgba(74, 103, 65, 0.08);
+}
+
+.trip-logistics-comparison-bilans td:has(.trip-logistics-balance--negative) {
+  background: rgba(196, 92, 58, 0.08);
+}
+
+.trip-logistics-comparison-bilans td:has(.trip-logistics-balance--neutral) {
+  background: var(--bg);
+}
+
+.trip-logistics-stat {
+  padding: 1rem 1.15rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.trip-logistics-stat .label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+  line-height: 1.35;
+}
+
+.trip-logistics-stat .value {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--text);
+}
+
+.trip-logistics-water {
+  margin-top: 1.25rem;
+}
+
+.trip-logistics-water-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.trip-logistics-water-header label {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.trip-logistics-water-value {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--accent);
+}
+
+.trip-logistics-water-target {
+  margin: 0 0 0.85rem;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.trip-logistics-slider {
+  --slider-progress: 0%;
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 6px;
+  margin: 0;
+  border-radius: 999px;
+  background: linear-gradient(
+    to right,
+    var(--green) 0%,
+    var(--green) var(--slider-progress),
+    var(--border) var(--slider-progress),
+    var(--border) 100%
+  );
+  cursor: pointer;
+}
+
+.trip-logistics-slider:focus {
+  outline: none;
+}
+
+.trip-logistics-slider:focus-visible {
+  box-shadow: 0 0 0 3px rgba(74, 103, 65, 0.25);
+}
+
+.trip-logistics-slider::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 999px;
+  background: transparent;
+}
+
+.trip-logistics-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: -7px;
+  border: 2px solid var(--surface);
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 1px 4px rgba(44, 42, 38, 0.2);
+  transition: transform 0.12s ease, background 0.12s ease;
+}
+
+.trip-logistics-slider:active::-webkit-slider-thumb {
+  transform: scale(1.08);
+  background: var(--accent-hover);
+}
+
+.trip-logistics-slider::-moz-range-track {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--border);
+}
+
+.trip-logistics-slider::-moz-range-progress {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--green);
+}
+
+.trip-logistics-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--surface);
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 1px 4px rgba(44, 42, 38, 0.2);
+  cursor: pointer;
+  transition: transform 0.12s ease, background 0.12s ease;
+}
+
+.trip-logistics-slider:active::-moz-range-thumb {
+  transform: scale(1.08);
+  background: var(--accent-hover);
+}
+
+.trip-logistics-slider-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.45rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.trip-logistics-total {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.trip-logistics-total-sep {
+  margin: 0 0.65rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.logistics-warning-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  padding: 1rem 1.15rem;
+  background: #faf4f0;
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.logistics-warning-banner p {
+  margin: 0;
+}
+
+.logistics-warning-banner svg {
+  flex-shrink: 0;
+  color: var(--accent);
+  margin-top: 0.1rem;
+}
+
+.trip-logistics-hint {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.trip-logistics-fit {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.trip-logistics-fit-hint {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.trip-logistics-fit-hint svg {
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}

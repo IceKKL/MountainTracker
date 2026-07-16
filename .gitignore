@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+
+# build output
+client/dist/
+server/dist/
+shared/dist/
+
+# local data
+server/data/*.sqlite
+server/data/*.sqlite-*
+server/uploads/**
+!server/uploads/.gitkeep
+!server/data/.gitkeep
+
+# editor
+.cursor/

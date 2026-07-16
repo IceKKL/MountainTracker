@@ -1,0 +1,141 @@
+.trip-section {
+  margin-bottom: 2rem;
+}
+
+.trip-section h2 {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  color: var(--stone);
+}
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 1.25rem;
+}
+
+.trip-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.75rem;
+  gap: 1.25rem;
+}
+
+.trip-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.trip-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.trip-card-header h3 {
+  font-size: 1.15rem;
+}
+
+.trip-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+
+.trip-card-main {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.trip-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.trip-card-map-link {
+  flex-shrink: 0;
+  align-self: center;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  line-height: 0;
+  transition: box-shadow 0.15s ease;
+}
+
+.trip-card-map-link:hover {
+  box-shadow: 0 2px 10px rgba(44, 42, 38, 0.12);
+}
+
+.trip-card-map {
+  width: 120px;
+  height: 100px;
+}
+
+.trip-card-map-inner,
+.trip-card-map .leaflet-container {
+  width: 100% !important;
+  height: 100% !important;
+  background: var(--surface);
+}
+
+.trip-card-map .leaflet-control-container {
+  display: none;
+}
+
+.trip-peak,
+.trip-dates,
+.trip-coords,
+.forecast-summary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.trip-duration {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.trip-forecast {
+  margin-top: 0.15rem;
+}
+
+.trip-card-complete {
+  margin-top: 0.75rem;
+}
+
+.complete-trip-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.complete-trip-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.trip-card-link:hover {
+  color: var(--accent);
+}
+
+.trip-gpx-upload {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}

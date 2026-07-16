@@ -1,0 +1,53 @@
+.kgp-progress-bar-wrap {
+  width: 100%;
+}
+
+.kgp-progress-bar-label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.kgp-progress-bar .kgp-progress-fill {
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+.kgp-progress-fill.kgp-bar-low {
+  background: linear-gradient(90deg, #b8b4ae, #c47a6a);
+}
+
+.kgp-progress-fill.kgp-bar-mid {
+  background: linear-gradient(90deg, #d4a843, #e08a3a);
+}
+
+.kgp-progress-fill.kgp-bar-high {
+  background: linear-gradient(90deg, #5a8a4a, #3d6b35);
+}
+
+.kgp-progress-fill.kgp-bar-complete {
+  background: linear-gradient(90deg, #c9a227, #e8c547, #c9a227);
+}
+
+.kgp-progress-complete-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.kgp-progress-crown {
+  color: #c9a227;
+  flex-shrink: 0;
+}
+
+.kgp-progress-congrats {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #8a7020;
+  margin: 0;
+}
+
+.kgp-progress-bar-lg .kgp-progress-congrats {
+  font-size: 1rem;
+}
